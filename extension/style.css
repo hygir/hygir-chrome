@@ -1,0 +1,21 @@
+.realTextarea
+{
+    z-index: 0;
+    background: transparent;
+    position: absolute;
+}
+
+.overlayTextarea
+{
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hySpellingError
+{
+    background: yellow;
+}

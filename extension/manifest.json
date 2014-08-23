@@ -3,5 +3,22 @@
 
     "name": "Hygir Spellchecker",
     "description": "Armenian Spellchecker",
-    "version": "0.1"
+    "version": "0.1",
+    "icons" : { "64": "icon.png" },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "http://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "css": ["style.css"],
+            "js": ["hygir.js", "dictionary.js", "check.js", "send_message.js"]
+        }
+    ]
+
 }
