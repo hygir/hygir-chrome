@@ -15,9 +15,9 @@
     ],
     "content_scripts": [
         {
-            "matches": ["http://*/*", "https://*/*"],
-            "css": ["style.css"],
-            "js": ["hygir.js", "dictionary.js", "check.js", "send_message.js"]
+            "matches": ["http://*/*", "https://*/*", "file:///*/*"],
+            "css": ["style.css", "jquery-ui.min.css", "jquery.highlighttextarea.min.css"],
+            "js": ["hygir.js", "dictionary.js", "check.js", "send_message.js", "jquery-2.1.1.min.js", "jquery-ui.min.js", "jquery.highlighttextarea.min.js"]
         }
     ]
 
