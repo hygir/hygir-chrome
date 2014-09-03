@@ -16,8 +16,8 @@
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*", "file:///*/*"],
-            "css": ["jquery-ui.min.css",
-                    "jquery.highlighttextarea.min.css",
+            "css": ["jquery-ui/jquery-ui.min.css",
+                    "jquery-highlighttextarea/jquery.highlighttextarea.min.css",
                     "style.css"],
             "js": ["jquery/jquery-2.1.1.js",
                    "jquery-ui/jquery-ui.js",

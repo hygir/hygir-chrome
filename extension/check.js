@@ -18,8 +18,12 @@ var highlight_errors = function(textarea) {
         }
     }
 
-    textarea.highlightTextarea({
-        words: bad_words
+    console.log(textarea);
+    console.log($(textarea));
+    console.log('bad_words:');
+    console.log(bad_words);
+    $(textarea).highlightTextarea({
+        words: bad_words.slice()
     });
 }
 
