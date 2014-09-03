@@ -16,8 +16,16 @@
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*", "file:///*/*"],
-            "css": ["style.css", "jquery-ui.min.css", "jquery.highlighttextarea.min.css"],
-            "js": ["hygir.js", "dictionary.js", "check.js", "send_message.js", "jquery-2.1.1.min.js", "jquery-ui.min.js", "jquery.highlighttextarea.min.js"]
+            "css": ["jquery-ui.min.css",
+                    "jquery.highlighttextarea.min.css",
+                    "style.css"],
+            "js": ["jquery/jquery-2.1.1.js",
+                   "jquery-ui/jquery-ui.js",
+                   "jquery-highlighttextarea/jquery.highlighttextarea.js",
+                   "hygir.js",
+                   "dictionary.js",
+                   "check.js",
+                   "send_message.js"]
         }
     ]
 
